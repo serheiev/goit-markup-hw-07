@@ -1,0 +1,36 @@
+.footer {
+  background-color: var(--dark-bg-color);
+}
+
+.footer-wrapper {
+  text-align: left;
+  display: flex;
+  gap: 70px;
+  padding: 60px 15px;
+}
+
+.footer-logo {
+  color: var(--light-text-color);
+}
+
+.footer__text {
+  color: var(--light-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 12px;
+  padding-bottom: 20px;
+}
+
+.footer-social__link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--light-text-color);
+}
+
+.footer-social__icon {
+  fill: currentColor;
+}
+
+

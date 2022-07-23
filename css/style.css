@@ -1,3 +1,5 @@
+/* 
+
 html {
   box-sizing: border-box;
 }
@@ -8,7 +10,7 @@ html {
   margin: 0;
   padding: 0;
 }
-/* Стили для обнуления верхних отступов у элементов */
+
 h1,
 h2,
 h3,
@@ -18,7 +20,7 @@ h6,
 p {
   margin: 0;
 }
-/* Класс для обнуления базовых свойств у списков (ul) */
+
 .list {
   list-style: none;
   padding-left: 0;
@@ -29,23 +31,26 @@ p {
   padding: 0;
   margin: 0;
 }
-/* Класс для обнуления базовых свойств у ссылок */
+
 .link {
   text-decoration: none;
   color: inherit;
 }
-/* Свойства для корректного отображения картинок */
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
-/* Свойства для обнуления курсива у address */
+
 address {
   font-style: normal;
 }
+ */
 
-:root {
+
+
+/* :root {
   --main-text-color: #212121;
   --second-text-color: #757575;
   --brend-color: #2196f3;
@@ -56,8 +61,8 @@ address {
   --brend-color-hover: #34a4ff;
   --footer-text-color: rgba(255, 255, 255, 0.6);
   --social-color: #afb1b8;
-}
-
+} */
+/* 
 body {
   background-color: var(--light-bg-color);
   font-family: 'Roboto';
@@ -77,7 +82,6 @@ body {
   padding: 0 15px;
 }
 
-/* попрпавить паддинги */
 
 .section__title {
   font-size: 36px;
@@ -115,11 +119,11 @@ body {
   right: 0;
   visibility: hidden;
   opacity: 0;
-}
+} */
 
 /* -----------------HEADER----------------- */
 
-.header {
+/* .header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -130,20 +134,29 @@ body {
   padding: 25px 15px;
 }
 
-.header-navigation,
-.header-menu,
-.header-contacts {
+
+.navigation {
   display: flex;
 }
 
-.header-menu > li,
-.header-contacts > li {
+.contacts {
+  display: flex;
+}
+
+.navigation__list {
+  display: flex;
+}
+
+
+
+.navigation__item,
+.contacts__link {
   display: flex;
   list-style: none;
   align-items: center;
 }
 
-.header-menu-link {
+.navigation__link {
   color: var(--main-text-color);
   text-decoration: none;
   font-weight: 500;
@@ -152,7 +165,7 @@ body {
   position: relative;
 }
 
-.header-contacts-link {
+.contacts__link {
   color: var(--second-text-color);
   display: flex;
   text-decoration: none;
@@ -161,15 +174,15 @@ body {
   transition: cubic-bezier(0.4, 0, 0.2, 1) 0.25s;
 }
 
-.link-icon {
+.contacts__icon {
   padding-right: 5px;
   fill: currentColor;
 }
-
+/* 
 .icon-smartphone {
   fill: currentColor;
-}
-
+} */
+/* 
 .header-menu-link:hover,
 .header-menu-link:focus,
 .header-contacts-link:hover,
@@ -207,12 +220,12 @@ body {
   position: absolute;
   top: 48px;
   left: 0;
-  /* border-bottom: 2px solid var(--brend-color); */
-}
+
+}  */
 
 /* -----------------HOME----------------- */
 
-.home {
+/* .home {
   background-color: var(--dark-bg-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../images/hero-bg.jpg);
@@ -234,7 +247,7 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-bottom: 30px;
-}
+} */
 
 
 
@@ -242,7 +255,7 @@ body {
 
 /* --------MODAL---------- */
 
-.home-overlay {
+/* .home-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -434,14 +447,14 @@ body {
 
 .modal__btn-submit {
   margin: 0 auto;
-}
+} */
 
 
 
 
 /* -----------------PECULIARITIES----------------- */
 
-.peculiarities__list {
+/* .peculiarities__list {
   display: flex;
   justify-content: space-between;
 }
@@ -470,11 +483,11 @@ body {
   color: var(--second-text-color);
   letter-spacing: 0.03em;
   line-height: 1.7;
-}
+} */
 
 /* -----------------BUSINESS----------------- */
 
-
+/* 
 
 .business {
   padding-top: 0;
@@ -508,10 +521,10 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--light-text-color);
-}
+} */
 
 /* -----------------TEAM----------------- */
-
+/* 
 .team {
   background-color: var(--grey-bg-color);
 }
@@ -577,10 +590,10 @@ body {
 
 .social__icon {
   fill: currentColor;
-}
+} */
 
 /* -----------------CLIENTS----------------- */
-
+/* 
 .clients__list {
   display: flex;
   justify-content: space-between;
@@ -605,10 +618,10 @@ body {
 
 .clients__icon {
   fill: currentColor;
-}
+} */
 
 /* -----------------FOOTER----------------- */
-
+/* 
 .footer {
   background-color: var(--dark-bg-color);
 }
@@ -700,12 +713,12 @@ address {
 
 .btn__icon {
   fill: currentColor;
-}
+} */
 
 /* ------------------------------------------------------------------ */
 /* ---------------------- portfolio styles -------------------------- */
 /* ------------------------------------------------------------------ */
-
+/* 
 .filter {
   display: flex;
   align-items: center;
@@ -818,4 +831,4 @@ address {
   color: var(--light-text-color);
   font-size: 18px;
   line-height: 1.55;
-}
+} */

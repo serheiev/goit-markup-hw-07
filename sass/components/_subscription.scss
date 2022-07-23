@@ -1,0 +1,24 @@
+.subscription {
+  display: flex;
+}
+
+.subscription__input {
+  width: 358px;
+  padding: 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+  margin-right: 12px;
+  color: var(--light-text-color);
+}
+
+.subscription__btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscription__icon {
+  fill: currentColor;
+}

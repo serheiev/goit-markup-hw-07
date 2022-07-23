@@ -1,0 +1,38 @@
+
+body {
+    background-color: var(--light-bg-color);
+    font-family: 'Roboto';
+    color: var(--main-text-color);
+    font-size: 14px;
+    letter-spacing: 0.02em;
+  }
+  
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  
+  .wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  
+  .section__title {
+    font-size: 36px;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  .is-hidden {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+  }
