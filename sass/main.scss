@@ -3,6 +3,7 @@
 
 //utils
 @import "./utils/variables";
+@import "./utils/mixins";
 
 //base styles
 @import "./base/base-style";
@@ -16,6 +17,7 @@
 @import "./components/address";
 @import "./components/subscription";
 @import "./components/filter";
+@import"./components/mobile-menu";
 
 
 //latout

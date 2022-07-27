@@ -8,6 +8,14 @@
 .content-item {
   list-style: none;
   transition: cubic-bezier(0.4, 0, 0.2, 1) 0.25s;
+  width: 450px;
+
+   @media screen and (min-width: 768px) {
+    width: 354px
+   }
+   @media screen and (min-width: 1200px) {
+    width: 370px;
+   }
 
   &:hover,
   &:focus {
@@ -19,6 +27,13 @@
 .content-link {
   text-decoration: none;
   text-align: left;
+  display: block;
+  height: 100%;
+}
+
+.content-desc {
+  border: 1px solid #eeeeee;
+  background-color: #fff;
 
   h3 {
     color: var(--main-text-color);
@@ -39,14 +54,16 @@
   }
 }
 
-.content-desc {
-  border: 1px solid #eeeeee;
-  background-color: #fff;
+.content-item:first-child .content-desc {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    height: 146px;
+   }
 }
 
 .content-overlay-wrapper {
   position: relative;
   overflow: hidden;
+  z-index: -1;
 }
 
 .content-overlay {
@@ -61,12 +78,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 24px;
 
   p {
     color: var(--light-text-color);
     font-size: 18px;
     line-height: 1.55;
   }
+
+
 }
 
 .content-link:hover .content-overlay {

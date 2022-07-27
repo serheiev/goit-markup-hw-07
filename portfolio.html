@@ -18,14 +18,85 @@
   <body>
     <header class="header">
       <div class="wrapper header-wrapper">
+
+
+                          <!-- mobile menu -->
+        <div class="mobile-menu is-hidden" data-menu>
+          <div class="mobile-menu__wrapper">
+            <ul class="mobile-navigation__list list">
+              <li class="mobile-navigation__item item">
+                <a class="mobile-navigation__link mobile-navigation__link--active" href="#"
+                  >Студия</a
+                >
+              </li>
+              <li class="mobile-navigation__item item">
+                <a class="mobile-navigation__link" href="#">Портфолио</a>
+              </li>
+              <li class="mobile-navigation__item item">
+                <a class="mobile-navigation__link" href="#">Контакты</a>
+              </li>
+            </ul>
+
+            <div>
+              <ul class="mobile-contacts__list list">
+                <li class="mobile-contacts__item item">
+                  <a class="mobile-contacts__link-tel" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mobile-contacts__item item">
+                  <a class="mobile-contacts__link-mail" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+
+              <ul class="mobile-social__list list">
+                <li class="mobile-social__item item">
+                  <a class="mobile-social__link" href="#">Instagram</a>
+                </li>
+                <li class="mobile-social__item item">
+                  <a class="mobile-social__link" href="#">Twitter</a>
+                </li>
+                <li class="mobile-social__item item">
+                  <a class="mobile-social__link" href="#">Facebook</a>
+                </li>
+                <li class="mobile-social__item item">
+                  <a class="mobile-social__link" href="#">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+              <!-- normal menu -->
+
+
         <nav class="navigation">
           <a href="./index.html" class="logo header-logo"><span>Web</span>Studio</a>
+
+          <button class="burger-menu is-open" data-menu-button>
+            <svg class="burger-menu__icon" width="40" height="40">
+              <use
+                class="burger-menu__icon--open "
+                href="./images/sprite.svg#icon-burger-menu_open"
+              ></use>
+              <use
+                class="burger-menu__icon--close"
+                href="./images/sprite.svg#icon-burger-menu_close"
+              ></use>
+            </svg>
+          </button>
+
+
+
           <ul class="navigation__list list">
             <li class="navigation__item item">
-              <a class="navigation__link navigation__link--active" href="./index.html">Студия</a>
+              <a class="navigation__link" href="./index.html">Студия</a>
             </li>
             <li class="navigation__item item">
-              <a class="navigation__link" href="./portfolio.html">Портфолио</a>
+              <a class="navigation__link navigation__link--active" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="navigation__item item">
               <a class="navigation__link" href="#">Контакты</a>
@@ -77,7 +148,27 @@
             <li class="content-item">
               <a href="#" class="content-link">
                 <div class="content-overlay-wrapper">
-                  <img src="./images/web.jpg" alt="технокряк" width="368" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/post1_lg.jpg 1x, ./images/portfolio/post1_lg@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/post1_md.jpg 1x, ./images/portfolio/post1_md@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/post1_sm.jpg 1x, ./images/portfolio/post1_sm@2x.jpg 2x"
+                    />
+                    <img
+                      src="./images/portfolio/post1_sm.jpg"
+                      alt="post"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="content-overlay">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -96,10 +187,27 @@
             <li class="content-item">
               <a href="#" class="content-link">
                 <div class="content-overlay-wrapper">
-                  <img
-                    src="./images/design.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="368"/>
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/post2_lg.jpg 1x, ./images/portfolio/post2_lg@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/post2_md.jpg 1x, ./images/portfolio/post2_md@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/post2_sm.jpg 1x, ./images/portfolio/post2_sm@2x.jpg 2x"
+                    />
+                    <img
+                      src="./images/portfolio/post2_sm.jpg"
+                      alt="post"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="content-overlay">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -118,7 +226,27 @@
             <li class="content-item">
               <a href="#" class="content-link">
                 <div class="content-overlay-wrapper">
-                  <img src="./images/app.jpg" alt="Ресторан Seafood" width="368" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/post3_lg.jpg 1x, ./images/portfolio/post3_lg@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/post3_md.jpg 1x, ./images/portfolio/post3_md@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/post3_sm.jpg 1x, ./images/portfolio/post3_sm@2x.jpg 2x"
+                    />
+                    <img
+                      src="./images/portfolio/post3_sm.jpg"
+                      alt="post"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="content-overlay">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -137,7 +265,27 @@
             <li class="content-item">
               <a href="#" class="content-link">
                 <div class="content-overlay-wrapper">
-                  <img src="./images/marketing.jpg" alt="Проект Prime" width="368" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/post4_lg.jpg 1x, ./images/portfolio/post4_lg@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/post4_md.jpg 1x, ./images/portfolio/post4_md@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/post4_sm.jpg 1x, ./images/portfolio/post4_sm@2x.jpg 2x"
+                    />
+                    <img
+                      src="./images/portfolio/post4_sm.jpg"
+                      alt="post"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="content-overlay">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -156,7 +304,27 @@
             <li class="content-item">
               <a href="#" class="content-link">
                 <div class="content-overlay-wrapper">
-                  <img src="./images/app2.jpg" alt="Проект Boxes" width="368" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/post5_lg.jpg 1x, ./images/portfolio/post5_lg@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/post5_md.jpg 1x, ./images/portfolio/post5_md@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/post5_sm.jpg 1x, ./images/portfolio/post5_sm@2x.jpg 2x"
+                    />
+                    <img
+                      src="./images/portfolio/post5_sm.jpg"
+                      alt="post"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="content-overlay">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -175,7 +343,27 @@
             <li class="content-item">
               <a href="#" class="content-link">
                 <div class="content-overlay-wrapper">
-                  <img src="./images/web2.jpg" alt="Inspiration has no Borders" width="368" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/post6_lg.jpg 1x, ./images/portfolio/post6_lg@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/post6_md.jpg 1x, ./images/portfolio/post6_md@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/post6_sm.jpg 1x, ./images/portfolio/post6_sm@2x.jpg 2x"
+                    />
+                    <img
+                      src="./images/portfolio/post6_sm.jpg"
+                      alt="post"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="content-overlay">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -194,7 +382,27 @@
             <li class="content-item">
               <a href="#" class="content-link">
                 <div class="content-overlay-wrapper">
-                  <img src="./images/design2.jpg" alt="Издание Limited Edition" width="368" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/post7_lg.jpg 1x, ./images/portfolio/post7_lg@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/post7_md.jpg 1x, ./images/portfolio/post7_md@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/post7_sm.jpg 1x, ./images/portfolio/post7_sm@2x.jpg 2x"
+                    />
+                    <img
+                      src="./images/portfolio/post7_sm.jpg"
+                      alt="post"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="content-overlay">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -213,7 +421,27 @@
             <li class="content-item">
               <a href="#" class="content-link">
                 <div class="content-overlay-wrapper">
-                  <img src="./images/marketing2.jpg" alt="Проект LAB" width="368" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/post8_lg.jpg 1x, ./images/portfolio/post8_lg@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/post8_md.jpg 1x, ./images/portfolio/post8_md@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/post8_sm.jpg 1x, ./images/portfolio/post8_sm@2x.jpg 2x"
+                    />
+                    <img
+                      src="./images/portfolio/post8_sm.jpg"
+                      alt="post"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="content-overlay">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -232,7 +460,27 @@
             <li class="content-item">
               <a href="#" class="content-link">
                 <div class="content-overlay-wrapper">
-                  <img src="./images/app3.jpg" alt="Growing Business" width="368" />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="./images/portfolio/post9_lg.jpg 1x, ./images/portfolio/post9_lg@2x.jpg 2x"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="./images/portfolio/post9_md.jpg 1x, ./images/portfolio/post9_md@2x.jpg 2x"
+                    />
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="./images/portfolio/post9_sm.jpg 1x, ./images/portfolio/post9_sm@2x.jpg 2x"
+                    />
+                    <img
+                      src="./images/portfolio/post9_sm.jpg"
+                      alt="post"
+                      width="450"
+                      height="294"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="content-overlay">
                     <p>
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -334,5 +582,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

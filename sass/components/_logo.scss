@@ -4,11 +4,24 @@
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
-    font-size: 2.16em;
+    font-size: 24px;
     letter-spacing: 0.03em;
-    margin-right: 50px;
+
+    display: flex;
+    align-items: center;
 
     span {
         color: var(--brend-color);
       }
+
+      @media screen and (min-width: 480px) {
+
+      }
+      @media screen and (min-width: 768px) {
+  
+      }
+      @media screen and (min-width: 1200px) {
+        font-size: 26px;
+      }
+
   }

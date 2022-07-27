@@ -2,6 +2,18 @@
   font-style: normal;
 }
 
+.address__list {
+  @media screen and (min-width: 480px) {
+    margin-top: 20px;
+  }
+  @media screen and (min-width: 768px) {
+
+  }
+  @media screen and (min-width: 1200px) {
+    text-align: left;
+  }
+}
+
 .address__item {
   list-style: none;
   padding: 5px 0;
